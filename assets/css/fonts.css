@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Yu-Mincho;
+  src: url(../fonts/yumin.ttf);
+}
+
+.hero h1 {
+  font-family: Yu-Mincho;
+}
+
+.hero p {
+  font-family: Hack;
+}
+/*# sourceMappingURL=fonts.css.map */
