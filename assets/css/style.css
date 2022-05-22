@@ -12,19 +12,14 @@ body {
   margin: 0;
   background-color: #16161a;
 }
-
 body ul {
   list-style-type: none;
   padding: 0;
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .navbar {
@@ -32,97 +27,76 @@ section {
   padding: 25px 40px 20px 40px;
   font-family: Hack;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
 .navbar .container {
   padding-left: auto;
   padding-right: auto;
-  -webkit-animation: fadeInDown .8s;
-          animation: fadeInDown .8s;
+  -webkit-animation: fadeInDown 0.8s;
+          animation: fadeInDown 0.8s;
 }
-
 .navbar .logo {
   display: none;
 }
-
 .navbar .header_links ul li a {
   outline: none;
   text-decoration: none;
   color: #a6a8b8;
   padding: 5px 12px;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
   font-size: 15px;
 }
-
 .navbar .header_links ul li a:hover {
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
   color: white;
   font-weight: bold;
 }
 
 .hero {
-  background-color: #16161a;
   color: white;
   text-align: center;
-  min-height: 90vh;
   padding: 0;
+  padding-top: 5%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  text-align: center;
 }
-
 .hero .container {
   margin-top: 8em;
-  -webkit-animation: fadeInUp .8s;
-          animation: fadeInUp .8s;
+  -webkit-animation: fadeInUp 0.8s;
+          animation: fadeInUp 0.8s;
 }
-
 .hero .badge {
   width: 150px;
   height: 150px;
-  border: 10px solid #41425293;
+  border: 10px solid rgba(65, 66, 82, 0.5764705882);
   border-radius: 25em;
 }
-
 .hero h1 {
   text-transform: uppercase;
 }
-
 .hero p {
   text-transform: capitalize;
-  margin-top: -.8em;
+  margin-top: -0.8em;
 }
-
 .hero a {
   text-decoration: none;
   color: #a6a8b8;
-  -webkit-transition: .8s all;
-  transition: .8s all;
+  transition: 0.8s all;
 }
-
 .hero a:hover {
-  -webkit-transition: .8s all;
-  transition: .8s all;
+  transition: 0.8s all;
   color: #fff;
 }
-
 .hero .typo {
   margin-left: auto;
   margin-right: auto;
@@ -135,26 +109,26 @@ section {
   -webkit-animation: typewriter1 2s steps(44) 1s 1 normal both, blinkTextCursor 530ms steps(44) infinite normal;
           animation: typewriter1 2s steps(44) 1s 1 normal both, blinkTextCursor 530ms steps(44) infinite normal;
 }
-
 .hero .hero_links ul li a {
   outline: none;
   text-decoration: none;
   color: #a6a8b8;
   margin: 20px 5px;
   padding: 5px;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
   font-size: 25px;
 }
-
 .hero .hero_links ul li a:hover {
   color: white;
   font-weight: bold;
 }
-
 .hero .hero_links ul li a:visited {
   color: #a6a8b8;
   font-weight: bold;
+}
+
+.block div {
+  min-height: 90vh;
 }
 
 .services-section {
@@ -163,31 +137,26 @@ section {
   text-align: center;
   min-height: 100vh;
 }
-
 .services-section h2 {
   text-transform: uppercase;
   font-family: Yu-Mincho;
 }
-
 .services-section p {
   text-transform: capitalize;
   font-family: Hack;
 }
-
 .services-section li {
   background-color: #16161a;
-  padding: .30em 1em;
+  padding: 0.3em 1em;
   border-radius: 1em;
   margin: 6em 1em;
 }
-
 .services-section li .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-
 .services-section li .icon1 {
   position: relative;
   z-index: 2;
@@ -196,7 +165,6 @@ section {
   margin-top: -2.2em;
   padding-right: 4.5px;
 }
-
 .services-section li .icon2 {
   position: relative;
   z-index: 2;
@@ -204,7 +172,6 @@ section {
   height: 3em;
   margin-top: -2.2em;
 }
-
 .services-section li .icon3 {
   position: relative;
   z-index: 2;
@@ -213,19 +180,17 @@ section {
   margin-top: -2.2em;
   padding-right: 2px;
 }
-
 .services-section li .border {
   position: absolute;
   z-index: 1;
   background-color: #cdceda;
-  border: 5px solid  #16161a;
+  border: 5px solid #16161a;
   border-radius: 50%;
   width: 4em;
   height: 4em;
   margin-top: -60px;
   margin-left: -40px;
 }
-
 .services-section .li1 {
   margin-top: 120px;
 }
@@ -235,36 +200,29 @@ section {
   color: #ebebeb;
   padding: 1em 2em;
 }
-
 .contacts-section h3 {
   font-family: Yu-Mincho;
   text-transform: uppercase;
 }
-
 .contacts-section p {
   font-family: Hack;
-  font-size: .9em;
+  font-size: 0.9em;
   text-transform: capitalize;
 }
-
 .contacts-section span {
   text-transform: none;
 }
-
 .contacts-section li {
   margin: 50px auto;
 }
-
 .contacts-section a {
   outline: none;
   text-decoration: none;
   color: white;
   padding: 5px 12px;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
   font-size: 15px;
 }
-
 .contacts-section a:hover {
   color: #ebdc56;
   font-weight: bold;
@@ -280,11 +238,10 @@ section {
 
 .footer {
   background-color: #16161a;
-  padding: .3em;
+  padding: 0.3em;
   color: #94a1b2;
   font-family: Hack;
 }
-
 .footer p {
   text-align: center;
   margin-top: 0%;
@@ -294,14 +251,10 @@ section {
 
 @media only screen and (min-width: 768px) {
   .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navbar .container {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
   }
   .navbar ul {
     float: right;
@@ -311,22 +264,15 @@ section {
     height: 50px;
     float: left;
   }
+
   .services-section {
     min-height: 100vh;
   }
   .services-section ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
   .services-section li {
     width: 50%;
@@ -336,34 +282,26 @@ section {
   .services-section .li1 {
     margin-top: 100px;
   }
+
   .contacts-section .container {
     width: 100%;
   }
   .contacts-section .container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
   }
   .contacts-section .container ul li {
     margin: 10px;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
   }
 }
-
 @media only screen and (min-width: 1080px) {
   .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navbar .container {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
   }
   .navbar ul {
     float: right;
@@ -373,25 +311,19 @@ section {
     height: 50px;
     float: left;
   }
+
   .hero {
     min-height: 90vh;
   }
+
   .services-section {
     min-height: 50vh;
   }
   .services-section ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
   .services-section li {
     width: 25%;
@@ -400,6 +332,7 @@ section {
   .services-section .li1 {
     margin-top: 95px;
   }
+
   .contacts-section {
     min-height: 20vh;
   }
@@ -407,40 +340,27 @@ section {
     width: 100%;
   }
   .contacts-section .container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
   }
   .contacts-section .container ul li {
     margin: 10px;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
   }
   .contacts-section .container ul .contacts-left-col {
     margin-left: 100px;
   }
 }
-
 @media only screen and (min-width: 1450px) {
   .services-section {
     min-height: 37vh;
   }
   .services-section ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
   .services-section li {
     width: 28%;
@@ -449,6 +369,7 @@ section {
   .services-section .li1 {
     margin-top: 70px;
   }
+
   .contacts-section {
     min-height: 20vh;
   }
@@ -456,20 +377,15 @@ section {
     width: 100%;
   }
   .contacts-section .container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
   }
   .contacts-section .container ul li {
     margin: 10px;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
   }
   .contacts-section .container ul .contacts-left-col {
     margin-left: 100px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

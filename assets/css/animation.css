@@ -6,7 +6,6 @@
     width: 20em;
   }
 }
-
 @keyframes typewriter1 {
   from {
     width: 0;
@@ -15,7 +14,6 @@
     width: 20em;
   }
 }
-
 @-webkit-keyframes typewriter2 {
   from {
     width: 0;
@@ -24,7 +22,6 @@
     width: 28.5em;
   }
 }
-
 @keyframes typewriter2 {
   from {
     width: 0;
@@ -33,7 +30,6 @@
     width: 28.5em;
   }
 }
-
 @-webkit-keyframes blinkTextCursor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75);
@@ -42,7 +38,6 @@
     border-right-color: transparent;
   }
 }
-
 @keyframes blinkTextCursor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75);
@@ -51,67 +46,50 @@
     border-right-color: transparent;
   }
 }
-
 @-webkit-keyframes fadeInUp {
   from {
-    -webkit-transform: translate3d(0, 150px, 0);
-            transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 @keyframes fadeInUp {
   from {
-    -webkit-transform: translate3d(0, 150px, 0);
-            transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeInDown {
   from {
-    -webkit-transform: translate3d(0, -150px, 0);
-            transform: translate3d(0, -150px, 0);
+    transform: translate3d(0, -150px, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 @keyframes fadeInDown {
   from {
-    -webkit-transform: translate3d(0, -150px, 0);
-            transform: translate3d(0, -150px, 0);
+    transform: translate3d(0, -150px, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 .reveal {
   position: relative;
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
+  transform: translateY(150px);
   opacity: 0;
-  -webkit-transition: 2s all ease;
   transition: 2s all ease;
 }
 
 .reveal.active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: .8;
-}
-/*# sourceMappingURL=animation.css.map */
+  transform: translateY(0);
+  opacity: 0.8;
+}/*# sourceMappingURL=animation.css.map */

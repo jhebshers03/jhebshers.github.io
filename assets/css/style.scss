@@ -63,11 +63,18 @@ section {
     }
 }
 .hero {
-    background-color: #16161a;
     color: white;
     text-align: center;
-    min-height: 90vh;
     padding: 0;
+    padding-top: 5%;
+
+    // New line added
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    text-align: center;
 
     .container {
         margin-top: 8em;
@@ -132,6 +139,13 @@ section {
         font-weight: bold;
     }
 
+}
+
+.block {
+
+    div {
+        min-height: 90vh;
+    }
 }
 
 .services-section {
